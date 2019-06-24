@@ -6,6 +6,9 @@ TagManager:
   tags:
   - yol
   - ball
+  - kupyol
+  - delikcollider
+  - maviball
   layers:
   - Default
   - TransparentFX

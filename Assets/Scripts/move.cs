@@ -20,4 +20,7 @@ public class move : MonoBehaviour
 
         transform.Translate(new Vector3(h, 0, v));
     }
+
+    
+
 }

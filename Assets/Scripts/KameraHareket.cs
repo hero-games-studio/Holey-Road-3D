@@ -11,7 +11,7 @@ public class KameraHareket : MonoBehaviour {
 	void Start () {
 
         playerObj = GameObject.Find("karaDelik"); //karadelik nesnemizi atadık
-        cameraOffSet = new Vector3(0, 10, -10); //kameranın uzaklığını belirledik
+        cameraOffSet = new Vector3(0, 110, 0); //kameranın uzaklığını belirledik
 	}
 	
 	// Update is called once per frame
