@@ -8,6 +8,8 @@ public class TouchLogic : MonoBehaviour
 {
   //public float wallDistance;
     public float hiz;
+    
+   
 
     void Start()
     {
@@ -38,21 +40,6 @@ public class TouchLogic : MonoBehaviour
 
 
     }
-  
-    /*  private void LateUpdate()
-    {
-        Vector3 pos = transform.position;
+    
 
-        if (transform.position.x < -wallDistance)
-        {
-            pos.x = -wallDistance;
-
-        }
-        else if (transform.position.x > wallDistance)
-        {
-            pos.x = wallDistance;
-        }
-
-        transform.position = pos;
-    }*/
 }

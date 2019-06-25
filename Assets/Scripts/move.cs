@@ -13,13 +13,13 @@ public class move : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+  /*  void Update()
     {
         float h = Input.GetAxis("Horizontal") * speed;
         float v = Input.GetAxis("Vertical") * speed;
 
         transform.Translate(new Vector3(h, 0, v));
-    }
+    }*/
 
     
 
