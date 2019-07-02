@@ -30,9 +30,9 @@ public class carpisma : MonoBehaviour
         if (toplam >= 100)
         {
             Debug.Log("superball aktif");
-            GetComponent<yutma>().cekim = 500f;
-            GetComponent<yutma>().cekim2 = 2f;
-            GetComponent<yutma>().hiz = 10f;
+            //GetComponent<yutma>().cekim = 500f;
+            //GetComponent<yutma>().cekim2 = 2f;
+            //GetComponent<yutma>().hiz = 10f;
 
 
         }
