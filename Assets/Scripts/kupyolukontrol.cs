@@ -14,8 +14,6 @@ public class kupyolukontrol : MonoBehaviour
     {
         //yollara fiziksel bir agırlık verdik
         fizik1 = yol1.GetComponent<Rigidbody>();
-        
-
     }
 
     // Update is called once per frame

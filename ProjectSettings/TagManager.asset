@@ -8,7 +8,8 @@ TagManager:
   - ball
   - kupyol
   - delikcollider
-  - maviball
+  - mavikup
+  - kirmizikup
   layers:
   - Default
   - TransparentFX

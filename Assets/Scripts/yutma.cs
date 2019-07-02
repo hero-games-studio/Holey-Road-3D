@@ -7,7 +7,15 @@ public class yutma : MonoBehaviour
     [SerializeField] private GameObject yol;
     Rigidbody kup;
     public float cekim;
-   
+    public float cekim2;
+    public float yukseklikFarki;
+    private float normalYukseklik;
+    public float hiz;
+
+    private bool firstHit = false;
+
+    [SerializeField]
+    public int sayi = 10;
 
     private void Start()
     {
@@ -18,11 +26,23 @@ public class yutma : MonoBehaviour
     private void FixedUpdate()
     {
         float distance = Vector3.Distance(yol.transform.position, transform.position);
-        //Debug.Log(distance);
-       // Debug.Log(distance);
-        if (distance < cekim)
+        float yukseklik = Mathf.Abs(normalYukseklik - transform.position.y);
+        //Debug.Log(yukseklik);
+        // Debug.Log(distance);
+        if (distance < cekim && distance > cekim2 && yukseklik < yukseklikFarki)
         {
-            transform.position = Vector3.Lerp(transform.position, new Vector3(yol.transform.position.x, transform.position.y, yol.transform.position.z), Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, yol.transform.position, Time.deltaTime * hiz);
+            
+        }
+
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (!firstHit)
+        {
+            firstHit = true;
+            normalYukseklik = transform.position.y;
         }
     }
 
