@@ -14,28 +14,17 @@ public class carpisma : MonoBehaviour
     [SerializeField]
     private Text sayiText;
 
-    [SerializeField]
-    int toplam = 0;
-    
+    public int toplam = 0;
+
+    public bool isSuper;
+
 
     private void Start()
     {
+        isSuper = false;
         kupsayisi = toplamKup;
         sayiText.text = kupsayisi + "/" + toplamKup;
         
-    }
-
-    void Update()
-    {
-        if (toplam >= 100)
-        {
-            Debug.Log("superball aktif");
-            //GetComponent<yutma>().cekim = 500f;
-            //GetComponent<yutma>().cekim2 = 2f;
-            //GetComponent<yutma>().hiz = 10f;
-
-
-        }
     }
 
 
@@ -65,9 +54,10 @@ public class carpisma : MonoBehaviour
             Destroy(carpisma.gameObject, 0);
             isik1.intensity -= 100f;
             isik1.range -= 2f;
+           
         }
-        Debug.Log(toplam);
 
+        Debug.Log(toplam);
         
     } 
 
